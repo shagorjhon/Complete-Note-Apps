@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.input_show.InputActivity">
+
+    <ImageView
+        android:id="@+id/imageViewID"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <EditText
+        android:id="@+id/titleInputID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imageViewID"
+        />
+    <EditText
+        android:id="@+id/descriptionInputID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description"
+        android:textSize="20dp"
+        android:layout_below="@id/titleInputID"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/saveBtnID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
